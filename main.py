@@ -1,4 +1,5 @@
 import os
+import sys
 
 from flask import Flask
 from flask import request
@@ -19,5 +20,5 @@ def add():
 
 
 if __name__ == '__main__':
-    print(os.environ.get('PORT'))
+    print(sys.version)
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT')))
